@@ -1,2 +1,20 @@
 # Forex-Rates-Prediction-Using-RNN
 Ứng dụng các mô hình mạng thần kinh hồi quy RNN để dự đoán tỷ giá ngoại hối
+
+Bộ dữ liệu gồm những mã ký tự (mã tiền tệ) để định nghĩa cho tên của tiền tệ do Tổ chức Tiêu chuẩn hóa quốc tế (ISO) ban hành. Danh sách mã ISO 4217 là chuẩn hiện hành trong niêm yết ngân hàng và kinh doanh trên toàn thế giới để xác định những loại tiền tệ khác nhau. Đây là những tỷ giá hối đoái và ký hiệu được giao dịch nhiều nhất trên các sàn giao dịch ngoại hối, được cung cấp bởi thư viện yfinance.
+
+STT	    Ký hiệu	        Chú thích
+1	      USDJPY
+      (USDJPY=X)	  Cặp tiền tệ US Dollar/Japanese Yen, phản ánh tỷ giá chéo giữa đồng Đô la Mỹ và Yên Nhật.
+2	      GBPUSD
+      (GBPUSD=X)	  Cặp tiền tệ Great British Pound/US Dollar, phản ánh tỷ giá chéo giữa đồng Bảng Anh và Đô la Mỹ.
+3	      EURUSD
+      (EURUSD=X)	  Cặp tiền tệ Euro/US Dollar, phản ánh tỷ giá chéo giữa đồng Euro và Đô la Mỹ.
+4	      USOIL
+        (CL=F)	    Ký hiệu US/OIL, phản ánh giá dầu thô WTI (West Texas Intermediate) tính bằng đồng Đô la Mỹ trên mỗi thùng.
+5	      XAUUSD
+        (GC=F)	    Ký hiệu XAU/USD, phản ánh giá trị của vàng, tính bằng đồng Đô la Mỹ trên 1 ounce vàng.
+
+Việc sử dụng mạng thần kinh hồi quy (Recurrent Neural Network) dự đoán những giá trị này giúp những nhà đầu tư nhỏ lẻ đưa ra quyết định giao dịch nhằm tối đa hóa lợi nhuận hoặc giảm thiểu rủi ro. Doanh nghiệp hoạt động xuất nhập khẩu có thể dựa vào dự đoán tỷ giá để bảo vệ mình trước biến động tiền tệ, giúp quản lý chi phí và lợi nhuận. Ngoài ra, việc dự đoán giá dầu và vàng giúp các công ty năng lượng, sản xuất và tổ chức tài chính lập kế hoạch chi tiêu và đầu tư dài hạn. Các tổ chức tài chính và ngân hàng trung ương cũng sử dụng thông tin này để đưa ra các chính sách tiền tệ phù hợp với tình hình kinh tế. Đồng thời, nó hỗ trợ các nhà phân tích hiểu rõ hơn về xu hướng kinh tế toàn cầu và ảnh hưởng của các sự kiện địa chính trị đối với thị trường.
+
+3 mô hình học máy được tác giả sử dụng là Simple RNN, LSTM và ARIMA.
